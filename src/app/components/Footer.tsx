@@ -1,5 +1,3 @@
-import { Mail, Instagram, Linkedin } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12 px-6">
@@ -13,13 +11,13 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Instagram className="w-6 h-6" />
+                <span>IG</span>
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Linkedin className="w-6 h-6" />
+                <span>LI</span>
               </a>
               <a href="mailto:contato@exemplo.com" className="text-gray-400 hover:text-white transition-colors">
-                <Mail className="w-6 h-6" />
+                <span>EM</span>
               </a>
             </div>
           </div>
