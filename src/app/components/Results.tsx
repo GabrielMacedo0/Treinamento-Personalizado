@@ -19,11 +19,11 @@ export function Results() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-blue-600 text-white">
+    <section className="py-20 px-6 bg-primary text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl mb-4">Atuação baseada em resultados reais</h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-green-100 max-w-3xl mx-auto leading-relaxed">
             Ao longo dos anos, ajudamos pessoas comuns, atletas e profissionais ocupados a transformar saúde, performance e estilo de vida com estratégia, consistência e acompanhamento individual.
           </p>
         </div>
@@ -32,10 +32,10 @@ export function Results() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-blue-700 rounded-xl"
+              className="text-center p-6 bg-[#0a6338] rounded-xl"
             >
               <div className="text-5xl font-bold mb-3">{stat.number}</div>
-              <div className="text-blue-100 leading-relaxed">{stat.label}</div>
+              <div className="text-green-100 leading-relaxed">{stat.label}</div>
             </div>
           ))}
         </div>

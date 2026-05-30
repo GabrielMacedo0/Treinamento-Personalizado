@@ -53,12 +53,12 @@ export function Services() {
               key={index}
               className={`relative rounded-2xl p-8 border-2 ${
                 plan.recommended
-                  ? 'border-blue-600 shadow-2xl transform scale-105'
+                  ? 'border-primary shadow-2xl transform scale-105'
                   : 'border-gray-200 shadow-lg'
               }`}
             >
               {plan.recommended && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold">
                   {plan.note}
                 </div>
               )}
@@ -70,7 +70,7 @@ export function Services() {
 
               <div className="mb-8">
                 <div className="flex items-baseline gap-1">
-                  <span className="text-5xl font-bold text-blue-600">{plan.price}</span>
+                  <span className="text-5xl font-bold text-primary">{plan.price}</span>
                   <span className="text-gray-600 text-lg">{plan.period}</span>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export function Services() {
               <div className="space-y-3 mb-8">
                 {plan.features.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-gray-700 text-sm">{feature}</span>
                   </div>
                 ))}
@@ -88,7 +88,7 @@ export function Services() {
                 href="#contact"
                 className={`block w-full text-center py-3 rounded-lg font-semibold transition-all ${
                   plan.recommended
-                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                    ? 'bg-primary text-white hover:bg-[#12A150]'
                     : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
                 }`}
               >

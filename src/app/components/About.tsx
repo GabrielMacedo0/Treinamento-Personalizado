@@ -48,7 +48,7 @@ export function About() {
             <div className="space-y-3">
               {credentials.map((credential, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{credential}</span>
                 </div>
               ))}

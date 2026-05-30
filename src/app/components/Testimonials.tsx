@@ -65,7 +65,7 @@ export function Testimonials() {
               key={index}
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
             >
-              <Quote className="w-10 h-10 text-blue-200 mb-4" />
+              <Quote className="w-10 h-10 text-[#F4C542] mb-4" />
               <p className="text-gray-700 mb-6 leading-relaxed italic">
                 "{testimonial.text}"
               </p>

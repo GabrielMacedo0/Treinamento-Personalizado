@@ -3,22 +3,22 @@ import { Target, TrendingUp, Heart, Trophy } from "lucide-react";
 export function Situations() {
   const situations = [
     {
-      icon: <Target className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <Target className="w-12 h-12 text-primary mb-4" />,
       title: "Quando a disciplina não se sustenta",
       description: "Para quem começa forte, para, recomeça e sente dificuldade em manter constância entre trabalho, família e rotina corrida."
     },
     {
-      icon: <TrendingUp className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <TrendingUp className="w-12 h-12 text-primary mb-4" />,
       title: "Quando você treina, mas não evolui",
       description: "Para quem já corre, pedala, treina ou frequenta academia, mas sente que o esforço não está se convertendo em performance real."
     },
     {
-      icon: <Heart className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <Heart className="w-12 h-12 text-primary mb-4" />,
       title: "Quando o corpo pede mudança",
       description: "Para quem sente queda de energia, ganho de peso, dores frequentes ou percebe que precisa investir em saúde antes que o tempo cobre a conta."
     },
     {
-      icon: <Trophy className="w-12 h-12 text-blue-600 mb-4" />,
+      icon: <Trophy className="w-12 h-12 text-primary mb-4" />,
       title: "Quando você quer competir em alto nível",
       description: "Para runners, ciclistas e atletas que desejam performance com método profissional."
     }

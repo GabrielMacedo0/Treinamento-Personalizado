@@ -62,9 +62,7 @@ export function Pillars() {
             <p>Corpo forte sem mente estável não sustenta.</p>
             <p>Resultado físico sem rotina organizada dura pouco.</p>
             <p>Alta performance sem saúde emocional vai cobrar.</p>
-            <p className="font-semibold">
-              Por isso, enxergamos o ser humano de forma completa.
-            </p>
+            <p className="font-semibold">Por isso, enxergamos o ser humano de forma completa.</p>
             <p>
               Trabalhamos com o conceito das <strong>8 saúdes</strong>,
               entendendo que evolução verdadeira acontece quando diferentes pilares caminham juntos.
@@ -76,12 +74,12 @@ export function Pillars() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all border-t-4 border-transparent hover:border-blue-600 group"
+              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all border-t-4 border-transparent hover:border-primary group"
             >
               <div className={`text-white bg-gradient-to-br ${pillar.color} p-3 rounded-lg inline-block mb-4`}>
                 {pillar.icon}
               </div>
-              <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">{pillar.title}</h3>
+              <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">{pillar.title}</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
                 {pillar.description}
               </p>
@@ -89,7 +87,7 @@ export function Pillars() {
           ))}
         </div>
 
-        <div className="bg-blue-600 text-white p-8 rounded-xl text-center mb-8">
+        <div className="bg-primary text-white p-8 rounded-xl text-center mb-8">
           <h3 className="text-2xl mb-4">Nosso foco de atuação</h3>
           <p className="mb-6 max-w-2xl mx-auto">
             Embora olhemos para o todo, concentramos nossa atuação onde conseguimos gerar impacto mais direto e consistente:
@@ -106,7 +104,7 @@ export function Pillars() {
               "Equilíbrio mental"
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-blue-200 rounded-full"></div>
+                <div className="w-2 h-2 bg-[#F4C542] rounded-full"></div>
                 <span className="text-sm">{item}</span>
               </div>
             ))}

@@ -24,13 +24,13 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-[#0F7B45] to-[#123B5D] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-6 text-white leading-tight">
             Your next level may not require changing everything.
           </h2>
-          <p className="text-2xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-2xl text-green-100 max-w-3xl mx-auto">
             It may simply require changing the right things first.
           </p>
         </div>
@@ -40,33 +40,33 @@ export function Contact() {
             <h3 className="text-3xl mb-8">Próximos Passos</h3>
 
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4 bg-blue-700 p-6 rounded-xl">
-                <Calendar className="w-8 h-8 text-blue-200 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
+                <Calendar className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2 text-xl">1. Agende sua Análise</h4>
-                  <p className="text-blue-100 leading-relaxed">
+                  <p className="text-green-100 leading-relaxed">
                     Preencha o formulário e agende um encontro inicial para entendermos
                     seu momento atual, objetivos e limitações.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-blue-700 p-6 rounded-xl">
-                <MessageCircle className="w-8 h-8 text-blue-200 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
+                <MessageCircle className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2 text-xl">2. Diagnóstico Completo</h4>
-                  <p className="text-blue-100 leading-relaxed">
+                  <p className="text-green-100 leading-relaxed">
                     Realizamos análise de rotina, histórico de treinos, avaliação física
                     e definimos um plano personalizado.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 bg-blue-700 p-6 rounded-xl">
-                <Mail className="w-8 h-8 text-blue-200 flex-shrink-0 mt-1" />
+              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
+                <Mail className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-2 text-xl">3. Comece sua Transformação</h4>
-                  <p className="text-blue-100 leading-relaxed">
+                  <p className="text-green-100 leading-relaxed">
                     Inicie seu programa de treino personalizado com acompanhamento
                     contínuo e ajustes constantes.
                   </p>
@@ -74,15 +74,15 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="bg-blue-700 p-6 rounded-xl">
+            <div className="bg-[#0a6338] p-6 rounded-xl">
               <p className="text-lg leading-relaxed">
-                <strong className="text-blue-100">Agende agora:</strong>
+                <strong className="text-green-100">Agende agora:</strong>
                 <br/>
                 <a
                   href="https://calendar.app.google/m6zti8LiEBay1t7U6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-blue-200 underline text-xl"
+                  className="text-[#F4C542] hover:text-white underline text-xl"
                 >
                   Clique aqui para agendar pelo Google Calendar
                 </a>
@@ -104,7 +104,7 @@ export function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
@@ -119,7 +119,7 @@ export function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
@@ -134,7 +134,7 @@ export function Contact() {
                   required
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
@@ -148,7 +148,7 @@ export function Contact() {
                   required
                   value={formData.goal}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 >
                   <option value="">Selecione seu objetivo</option>
                   <option value="emagrecimento">Emagrecimento</option>
@@ -171,13 +171,13 @@ export function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Qual sua rotina? Já treina? Quais são seus principais desafios?"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg hover:bg-blue-700 transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
+                className="w-full bg-primary text-white py-4 px-6 rounded-lg hover:bg-[#12A150] transition-all transform hover:scale-105 font-semibold text-lg shadow-lg"
               >
                 Solicitar Análise Gratuita
               </button>
