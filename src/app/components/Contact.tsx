@@ -28,10 +28,10 @@ export function Contact() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-6 text-white leading-tight">
-            Your next level may not require changing everything.
+            Seu próximo nível pode não exigir que você mude tudo.
           </h2>
           <p className="text-2xl text-green-100 max-w-3xl mx-auto">
-            It may simply require changing the right things first.
+            Pode simplesmente exigir mudar as coisas certas primeiro.
           </p>
         </div>
 
