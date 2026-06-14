@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Calendar, Mail, MessageCircle } from "lucide-react";
 
+const CALENDAR_URL = "https://calendar.app.google/m6zti8LiEBay1t7U6";
+
 export function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,15 +25,36 @@ export function Contact() {
     });
   };
 
+  const steps = [
+    {
+      icon: <Calendar className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />,
+      title: "1. Agende sua Análise",
+      description:
+        "Preencha o formulário e agende um encontro inicial para entendermos seu momento atual, objetivos e limitações."
+    },
+    {
+      icon: <MessageCircle className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />,
+      title: "2. Diagnóstico Completo",
+      description:
+        "Realizamos análise de rotina, histórico de treinos, avaliação física e definimos um plano personalizado."
+    },
+    {
+      icon: <Mail className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />,
+      title: "3. Comece sua Transformação",
+      description:
+        "Inicie seu programa de treino personalizado com acompanhamento contínuo e ajustes constantes."
+    }
+  ];
+
   return (
     <section id="contact" className="py-20 px-6 bg-gradient-to-br from-[#0F7B45] to-[#123B5D] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-6 text-white leading-tight">
-            Seu próximo nível pode não exigir que você mude tudo.
+            Your next level may not require changing everything.
           </h2>
           <p className="text-2xl text-green-100 max-w-3xl mx-auto">
-            Pode simplesmente exigir mudar as coisas certas primeiro.
+            It may simply require changing the right things first.
           </p>
         </div>
 
@@ -40,46 +63,33 @@ export function Contact() {
             <h3 className="text-3xl mb-8">Próximos Passos</h3>
 
             <div className="space-y-6 mb-8">
-              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
-                <Calendar className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold mb-2 text-xl">1. Agende sua Análise</h4>
-                  <p className="text-green-100 leading-relaxed">
-                    Preencha o formulário e agende um encontro inicial para entendermos
-                    seu momento atual, objetivos e limitações.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
-                <MessageCircle className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold mb-2 text-xl">2. Diagnóstico Completo</h4>
-                  <p className="text-green-100 leading-relaxed">
-                    Realizamos análise de rotina, histórico de treinos, avaliação física
-                    e definimos um plano personalizado.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl">
-                <Mail className="w-8 h-8 text-[#F4C542] flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-semibold mb-2 text-xl">3. Comece sua Transformação</h4>
-                  <p className="text-green-100 leading-relaxed">
-                    Inicie seu programa de treino personalizado com acompanhamento
-                    contínuo e ajustes constantes.
-                  </p>
-                </div>
-              </div>
+              {steps.map((step, index) => (
+                <a
+                  key={index}
+                  href={CALENDAR_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 bg-[#0a6338] p-6 rounded-xl hover:bg-[#0d7a45] transition-all transform hover:scale-[1.02] cursor-pointer group block"
+                >
+                  {step.icon}
+                  <div>
+                    <h4 className="font-semibold mb-2 text-xl group-hover:text-[#F4C542] transition-colors">
+                      {step.title}
+                    </h4>
+                    <p className="text-green-100 leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </a>
+              ))}
             </div>
 
             <div className="bg-[#0a6338] p-6 rounded-xl">
               <p className="text-lg leading-relaxed">
                 <strong className="text-green-100">Agende agora:</strong>
-                <br/>
+                <br />
                 <a
-                  href="https://calendar.app.google/m6zti8LiEBay1t7U6"
+                  href={CALENDAR_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#F4C542] hover:text-white underline text-xl"
